@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>CHAPAK</title>
+</head>
+<body>
+    <h1 class="title">CHAPAK</h1>
+
+    <form>
+        <input type="number" placeholder="Write a number to start" inputmode="numeric" class="numInput">
+    </form>
+
+    <section class="container"></section>
+
+    <script>
+        const input = document.querySelector('.numInput');
+        const form = document.querySelector('form');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+
+            let value = input.value.trim();
+            const container = document.querySelector('.container');
+            container.innerHTML = ''
+
+            for(let i = 1; i <= value; i++) {
+                container.innerHTML += `
+                <div class='card'>
+                    <h1>${i} MACHLI 🐟 <span>X${i}</span></h1>
+                    <h1>PAANI MAI GYI 💦<span>X${i}</span></h1>
+                    <h1>CHAPAK 👏 <span>X${i}</span></h1>
+                </div>`
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} html {
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+} body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    background: #131515;
+    color: #F7F7F2;
+    line-height: 1.65;
+    min-height: 100dvh;
+} .container {
+    max-width: min(1440, 100% - 2rem);
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+} .card {
+    background: #111;
+    padding: 1rem 2rem;
+} .card h1 span {
+    font-size: 0.9rem;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 4rem;
+    z-index: -1;
+    color: #080808;
+    letter-spacing: 1px;
+    rotate: -10deg;
+    transform: translate(-50%, -50%);
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    width: 100%;
+    margin: 1.5rem auto;
+} form input {
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    color: inherit;
+    letter-spacing: 5px;
+    outline: none;
+} form input::placeholder {
+    letter-spacing: initial;
+} form input::-webkit-outer-spin-button,
+form input::-webkit-inner-spin-button {
+    appearance: none;
+    -webkit-appearance: none;
+} form button {
+    outline: none;
+    padding: 0.5rem 1.4rem;
+    font-family: inherit;
+    color: inherit;
+    font-size: inherit;
+    border-radius: 0 8px 8px 0;
+    background: transparent;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: background 350ms ease, color 200ms;
+} form button:hover {
+    background: #fff;
+    color: #000;
+}
